@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+  font-size: 1.2rem;
+  /* ブラウザいっぱいの幅 */
+  width: 100vw;
+  /* ブラウザいっぱいの幅 */
+  height: 100vh;
+  /* グラデーション ,抜けてた。。。*/
+  background: linear-gradient(to right, rgba(139, 71, 145, 0.351), rgb(177, 42, 67));
+  /* はみ出た部分を隠す */
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin:  20px auto;
+  align-items: center;
+  font-weight: 550;
+} 
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links li {
+  list-style: none;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-links ul a:hover{
+  color: rgb(223, 203, 179);
+}
+
+.infomation {
+  
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+#circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  background: #ccc;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.feature {
+  position: absolute;
+  color: white;
+  display: flex;
+}
+
+.feature img {
+  width: 70px;
+}
+
+.feature div {
+  margin-left: 20px;
+}
+.feature div a {
+  margin-top: 8px;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  top: 100px;
+  left: 340px;
+}
+.three {
+  bottom: 450px;
+  left: 50px;
+}
+
+.four{
+  bottom: 150px;
+  right: 370px;
+}
+
+.pc {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 27%;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#upBtn {
+  cursor: pointer;
+}
+
+#down {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+
